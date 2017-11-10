@@ -1,0 +1,392 @@
+@charset "utf-8";
+/*首页*/
+.back-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}
+.back-top.btm65{
+  bottom: 65px;
+}
+.back-top i {
+  display: block;
+  width: 61px;
+  height: 61px;
+  background-position: -139px -67px;
+}
+.ticket-tab{
+  overflow: hidden;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+}
+.ticket-tab li{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 0 45px;
+}
+.ticket-tab li span{
+  display: block;
+  height: 29px;
+}
+.ticket-tab li.cur span{
+  color: #eb656e;
+  border-bottom: 3px solid #eb656e;
+}
+.film-list ul{
+  padding: 0 15px;
+}
+.film-list ul li{
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  overflow: hidden;
+  position: relative;
+}
+.film-list ul li:last-child{
+  border-bottom: none;
+}
+.film-list .list-img{
+  float: left;
+}
+.film-list .list-img img{
+  display: block;
+}
+.film-list .list-con{
+  float: left;
+  margin-left: 10px;
+  width: 60%;
+}
+.list-con p{
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-con p.name span{
+  float: left;
+  font-size: 16px;
+  color: #333;
+  max-width: 100%;
+  overflow: hidden;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-con p.name em{
+  float: left;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-left: 10px;
+  margin-top: 3px;
+  line-height: 20px;
+}
+.list-con p.score{
+  color: #f2a965;
+}
+.list-con p.score .date{
+  color: #666;
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: 1px solid #666;
+}
+.list-con p.desc{
+  height: 22px;
+  line-height: 22px;
+  color: #666;
+}
+.film-list .list-link{
+  display: block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  color: #eb656e;
+  border: 1px solid #eb656e;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+}
+.bottom{
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  border-top: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+.bottom span{
+  color: #999;
+  font-size: 12px;
+}
+/*地区选择*/
+.area-list{
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+}
+.area-now{
+  background-color: #f5f5f5;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 10px;
+}
+.area-now em{
+  color: #00f;
+}
+.area-list dl dt{
+  position: relative;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+.area-list dl dt i{
+  right: 10px;
+  left: auto;
+}
+.area-list dl dd{
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+/*影院列表*/
+.area-sel{
+  background-color: #fff;
+  position: fixed;
+  top: 45px;
+  width: 100%;
+  z-index: 201;
+}
+.area-sel p{
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+.area-sel p .down{
+  border: 5px solid #666;
+  position: absolute;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  margin-left: -20px;
+  margin-top: 10px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+.area-sel p .down:before{
+  content: '';
+  border: 8px solid #fff;
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  top: -15px;
+  margin-left: -3px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.area-sel .sel-list{
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  z-index: 201;
+}
+.area-sel .sel-list li{
+  float: left;
+  width: 19%;
+  height: 35px;
+  line-height: 35px;
+  margin: 1% 1% 0 0;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  border: 1px solid #ddd;
+}
+.area-sel .sel-list li.on{
+  color: #f2a965;
+  border: 1px solid #f2a965;
+}
+.date-sel{
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 35px;
+}
+.cinema-list.mt35{
+  margin-top: 35px;
+}
+.cinema-list ul{
+  padding: 0 10px;
+}
+.cinema-list ul li{
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+}
+.cinema-list ul li:last-child{
+  border-bottom: none;
+}
+.cinema-list .name{
+  line-height: 30px;
+}
+.cinema-list .name span{
+  font-size: 16px;
+  font-weight: bold;
+}
+.cinema-list .name em{
+  color: #f2a965;
+  font-size: 14px;
+  float: right;
+}
+.cinema-list .name em i{
+  float: left;
+  width: 16px;
+  height: 16px;
+  background-position: left -24px;
+  margin: 8px 5px 0 0;
+}
+.cinema-list .desc{
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  word-break: break-all;
+}
+/*支付成功*/
+.success-img {
+  margin: 55px auto 10px;
+  width: 65px;
+  height: 65px;
+}
+.success-text {
+  margin-bottom: 20px;
+}
+.success-text p {
+  text-align: center;
+  color: #333;
+}
+.success-text .f20 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.success-text .f14 {
+  font-size: 14px;
+}
+.success-btn {
+  text-align: center;
+}
+.success-btn input {
+  width: 135px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  padding: 0;
+  margin: 0 10px;
+}
+.success-btn input.red {
+  background-color: #E60012;
+}
+.success-btn input.orange {
+  background-color: #f60;
+}
+/*登录*/
+.bind_phone {
+  padding: 0 10px;
+}
+.bind_phone ul li {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  height: 50px;
+  overflow: hidden;
+}
+.bind_phone ul li input {
+  border: none;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #999;
+}
+.bind_phone ul li .phone_input2 {
+  float: left;
+  width: 50%;
+}
+.bind_phone ul li .tw_img {
+  width: 25%;
+  height: 35px;
+  float: left;
+  margin-right: 2%;
+  margin-top: 7px;
+}
+.bind_phone ul li .tw_img img {
+  width: 100%;
+  height: 100%;
+}
+.bind_phone ul li .a_hq {
+  width: 23%;
+  height: 35px;
+  float: left;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 35px;
+  background: #E60012;
+  font-size: 14px;
+  margin-top: 7px;
+}
+.a_phone_btn {
+  background: #E60012 none repeat scroll 0 0;
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 5%;
+}
+.a_phone_btn a {
+  color: #fff;
+  display: block;
+}
+/*编辑手机号码*/
+.phone-num{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: #333;
+}
+.phone-num input{
+  border: none;
+  width: 75%;
+  height: 40px;
+  line-height: 40px;
+  background-color: transparent;
+  margin-left: 10px;
+}
