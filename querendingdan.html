@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>确认订单</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body class="bfff">
+<div class="topfixed">
+  <!-- 若头部没有下边框，则需要去掉下面header标签的bd_b -->
+  <header class="header white bd_b">
+    <a href="###" class="a-back"></a>
+    <h2>确认订单</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 55px;">
+  <div class="order">
+    <div class="tit">
+      <p class="fl">
+        <span class="name">羞羞的铁拳</span>
+        <span class="num">2张</span>
+      </p>
+      <p class="fr">
+        <span>付款剩余时间</span>
+        <span class="f16">15:00</span>
+      </p>
+    </div>
+    <div class="con">
+      <p>明天&nbsp;10-27&nbsp;00:05~01:54&nbsp;英语3D</p>
+      <p>保利国际影城-上海曹路宝龙店</p>
+      <p>5号厅&nbsp;6排5座&nbsp;6排6座</p>
+    </div>
+    <em class="ticket-style"></em>
+  </div>
+  <div class="order-tips">
+    <p class="tips-tit">退改签说明</p>
+    <p>1.由于设备故障等不可抗力因素，存在少量场次取消情况，会进行退票退款</p>
+    <p>2.由于影院系统不稳定等因素，存在出票失败的情况，会进行退款</p>
+    <p>3.一经下单，不可发起退票与改签，请谨慎下单</p>
+  </div>
+  <div class="confirm-btm">
+    <p class="fl">
+      <span>应付</span>
+      <em>60000.00元</em>
+    </p>
+    <p class="fr">
+      <a href="###" onclick="return overtime();">立即付款</a>
+    </p>
+  </div>
+</div>
+<div id="bg-gray"></div>
+<div class="overtime-modal">
+  <div class="msg">
+    <p>付款超时，请返回选座页重新购买</p>
+  </div>
+  <div class="btn">
+    <input type="button" value="我知道了">
+  </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function overtime() {
+  var bggray = $("#bg-gray");
+  var modal = $(".overtime-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>

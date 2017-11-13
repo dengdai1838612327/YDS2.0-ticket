@@ -16,11 +16,15 @@
   background-position: -139px -67px;
 }
 .ticket-tab{
+  position: fixed;
+  top: 45px;
   overflow: hidden;
   width: 100%;
   height: 30px;
   line-height: 30px;
   border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 1;
 }
 .ticket-tab li{
   width: 50%;
@@ -37,6 +41,9 @@
 .ticket-tab li.cur span{
   color: #eb656e;
   border-bottom: 3px solid #eb656e;
+}
+.film-list{
+  margin-top: 30px;
 }
 .film-list ul{
   padding: 0 15px;
@@ -63,6 +70,7 @@
 }
 .list-con p{
   font-size: 14px;
+  color: #666;
   height: 25px;
   line-height: 25px;
   overflow: hidden;
@@ -91,11 +99,10 @@
   margin-top: 3px;
   line-height: 20px;
 }
-.list-con p.score{
+.list-con p.score span{
   color: #f2a965;
 }
-.list-con p.score .date{
-  color: #666;
+.list-con p.score em{
   margin-left: 10px;
   padding-left: 5px;
   border-left: 1px solid #666;
@@ -103,14 +110,14 @@
 .list-con p.desc{
   height: 22px;
   line-height: 22px;
-  color: #666;
 }
 .film-list .list-link{
   display: block;
   width: 50px;
   height: 30px;
-  line-height: 30px;
+  line-height: 28px;
   color: #eb656e;
+  background-color: #fff;
   border: 1px solid #eb656e;
   border-radius: 5px;
   text-align: center;
@@ -389,4 +396,273 @@
   line-height: 40px;
   background-color: transparent;
   margin-left: 10px;
+}
+/*确认订单*/
+.order{
+  background-color: #f5f5f5;
+  margin: 15px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.order .tit{
+  overflow: hidden;
+  border-bottom: 1px solid #999;
+  padding: 0 5px;
+}
+.order .tit .fl{
+  float: left;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.order .tit .fl .name{
+  font-size: 18px;
+  font-weight: bold;
+}
+.order .tit .fl .num{
+  font-size: 14px;
+}
+.order .tit .fr{
+  float: right;
+  margin-top: 5px;
+}
+.order .tit .fr span{
+  display: block;
+  text-align: right;
+}
+.order .tit .fr span.f16{
+  font-size: 18px;
+  color: #666;
+  font-weight: bold;
+  line-height: 20px;
+}
+.order .con{
+  padding: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 25px;
+}
+.order .ticket-style{
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #fff;
+  position: absolute;
+  right: -7px;
+  top: 50%;
+  margin-top: -15px;
+}
+.order-tips{
+  margin: 25px 15px;
+  font-size: 14px;
+  color: #999;
+}
+.order-tips .tips-tit{
+  color: #333;
+  line-height: 25px;
+}
+.confirm-btm{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  overflow: hidden;
+}
+.confirm-btm .fl{
+  float: left;
+  line-height: 55px;
+  width: 50%;
+  text-align: center;
+}
+.confirm-btm .fl span{
+  font-size: 14px;
+}
+.confirm-btm .fl em{
+  font-size: 20px;
+  color: #DF1F48;
+  font-weight: bold;
+}
+.confirm-btm .fr{
+  float: right;
+  line-height: 55px;
+  width: 50%;
+}
+.confirm-btm .fr a{
+  display: block;
+  color: #fff;
+  background-color: #ec5b68;
+  text-align: center;
+  font-size: 16px;
+}
+.overtime-modal {
+  display: none;
+  width: 70%;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  margin-top: -50px;
+  left: 15%;
+  background-color: #fff;
+  z-index: 201;
+}
+.overtime-modal .msg {
+  height: 60px;
+  text-align: center;
+}
+.overtime-modal .msg p {
+  font-size: 14px;
+  color: #666;
+  line-height: 60px;
+  margin: 0;
+}
+.overtime-modal .btn {
+  height: 40px;
+  overflow: hidden;
+}
+.overtime-modal .btn input {
+  float: left;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background-color: #999;
+  border-radius: 0;
+}
+/*订单列表*/
+.ticket-tab.three li{
+  width: 33.33%;
+  padding: 0 30px;
+}
+.order-list.mt30{
+  margin-top: 30px;
+}
+.order_nub {
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.o_left {
+  float: left;
+  width: 60%;
+}
+.o_left i {
+  background-position: 0 -194px;
+  float: left;
+  height: 26px;
+  margin: 7px 5px 0 6px;
+  width: 25px;
+}
+.o_left span {
+  font-size: 14px;
+}
+.o_rt {
+  width: 40%;
+  float: right;
+  padding-right: 10px;
+  text-align: right;
+}
+.o_rt span {
+  width: 40%;
+  float: right;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f60;
+}
+.order-detail{
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+.order-detail .detail-desc p{
+  color: #666;
+  font-size: 14px;
+}
+.order-detail .detail-desc p.name{
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+.order-detail .detail-price{
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.order-detail .detail-price em{
+  font-size: 18px;
+  color: #DF1F48;
+}
+.order-price{
+  overflow: hidden;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.order-price a {
+  float: right;
+  margin-left: 10px;
+  width: 25%;
+  height: 30px;
+  line-height: 28px;
+  border: 1px solid #ccc;
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  font-size: 13px;
+  background-color: #fff;
+}
+.order-price a.a_pay {
+  border: 1px solid #FF3333;
+  background: #FF3333;
+  color: #fff;
+}
+/*订单详情*/
+.order-box{
+  border-top: 1px solid #ddd;
+  background-color: #f5f5f5;
+  padding-bottom: 10px;
+}
+.order-desc{
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+.order-desc p{
+  overflow: hidden;
+}
+.order-desc p label{
+  float: left;
+  width: 25%;
+}
+.order-desc p span{
+  float: left;
+  width: 75%;
+}
+.order-desc p span.red{
+  color: #DF1F48;
+}
+.ticket-code{
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.ticket-tips{
+  background-color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  color: #666;
+}
+.ticket-tips .tips-tit{
+  color: #333;
+  font-size: 15px;
+}
+.order-price.detail-price{
+  background-color: #fff;
+  border-bottom: none;
 }
