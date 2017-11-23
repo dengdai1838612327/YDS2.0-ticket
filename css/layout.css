@@ -6,7 +6,7 @@
   right: 10px;
   z-index: 1;
 }
-.back-top.btm65{
+.back-top.btm65 {
   bottom: 65px;
 }
 .back-top i {
@@ -15,7 +15,7 @@
   height: 61px;
   background-position: -139px -67px;
 }
-.ticket-tab{
+.ticket-tab {
   position: fixed;
   top: 45px;
   overflow: hidden;
@@ -26,7 +26,7 @@
   background-color: #fff;
   z-index: 1;
 }
-.ticket-tab li{
+.ticket-tab li {
   width: 50%;
   float: left;
   text-align: center;
@@ -34,41 +34,41 @@
   color: #333;
   padding: 0 45px;
 }
-.ticket-tab li span{
+.ticket-tab li span {
   display: block;
   height: 29px;
 }
-.ticket-tab li.cur span{
+.ticket-tab li.cur span {
   color: #eb656e;
   border-bottom: 3px solid #eb656e;
 }
-.film-list{
+.film-list {
   margin-top: 30px;
 }
-.film-list ul{
+.film-list ul {
   padding: 0 15px;
 }
-.film-list ul li{
+.film-list ul li {
   border-bottom: 1px solid #ddd;
   padding: 15px 0;
   overflow: hidden;
   position: relative;
 }
-.film-list ul li:last-child{
+.film-list ul li:last-child {
   border-bottom: none;
 }
-.film-list .list-img{
+.film-list .list-img {
   float: left;
 }
-.film-list .list-img img{
+.film-list .list-img img {
   display: block;
 }
-.film-list .list-con{
+.film-list .list-con {
   float: left;
   margin-left: 10px;
   width: 60%;
 }
-.list-con p{
+.list-con p {
   font-size: 14px;
   color: #666;
   height: 25px;
@@ -78,7 +78,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.list-con p.name span{
+.list-con p.name span {
   float: left;
   font-size: 16px;
   color: #333;
@@ -88,7 +88,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.list-con p.name em{
+.list-con p.name em {
   float: left;
   font-size: 12px;
   color: #fff;
@@ -99,20 +99,19 @@
   margin-top: 3px;
   line-height: 20px;
 }
-.list-con p.score span{
+.list-con p.score span {
   color: #f2a965;
 }
-.list-con p.score em{
+.list-con p.score em {
   margin-left: 10px;
   padding-left: 5px;
   border-left: 1px solid #666;
 }
-.list-con p.desc{
+.list-con p.desc {
   height: 22px;
   line-height: 22px;
 }
-.film-list .list-link,
-.time-list .list-link{
+.film-list .list-link, .time-list .list-link {
   display: block;
   width: 50px;
   height: 30px;
@@ -128,44 +127,44 @@
   top: 50%;
   margin-top: -15px;
 }
-.bottom{
+.bottom {
   display: block;
   text-align: center;
   line-height: 30px;
   border-top: 1px solid #ddd;
   padding-bottom: 45px;
 }
-.bottom span{
+.bottom span {
   color: #999;
   font-size: 12px;
 }
 /*地区选择*/
-.area-list{
+.area-list {
   border-top: 1px solid #ddd;
   font-size: 14px;
 }
-.area-now{
+.area-now {
   background-color: #f5f5f5;
   height: 30px;
   line-height: 30px;
   border-bottom: 1px solid #ddd;
   padding: 0 10px;
 }
-.area-now em{
+.area-now em {
   color: #00f;
 }
-.area-list dl dt{
+.area-list dl dt {
   position: relative;
   height: 35px;
   line-height: 35px;
   padding: 0 10px;
   border-bottom: 1px solid #ddd;
 }
-.area-list dl dt i{
+.area-list dl dt i {
   right: 10px;
   left: auto;
 }
-.area-list dl dd{
+.area-list dl dd {
   background-color: #f5f5f5;
   border-bottom: 1px solid #ddd;
   height: 30px;
@@ -173,14 +172,14 @@
   padding-left: 10px;
 }
 /*影院列表*/
-.area-sel{
+.area-sel {
   background-color: #fff;
   position: fixed;
   top: 45px;
   width: 100%;
   z-index: 201;
 }
-.area-sel p{
+.area-sel p {
   border-bottom: 1px solid #ddd;
   width: 100%;
   height: 35px;
@@ -189,7 +188,7 @@
   font-size: 14px;
   position: relative;
 }
-.area-sel p .down{
+.area-sel p .down {
   border: 5px solid #666;
   position: absolute;
   display: inline-block;
@@ -201,7 +200,7 @@
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg)
 }
-.area-sel p .down:before{
+.area-sel p .down:before {
   content: '';
   border: 8px solid #fff;
   position: absolute;
@@ -213,7 +212,7 @@
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.area-sel .sel-list{
+.area-sel .sel-list {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   position: absolute;
@@ -223,7 +222,7 @@
   overflow: hidden;
   z-index: 201;
 }
-.area-sel .sel-list li{
+.area-sel .sel-list li {
   float: left;
   width: 19%;
   height: 35px;
@@ -234,55 +233,56 @@
   font-size: 13px;
   border: 1px solid #ddd;
 }
-.area-sel .sel-list li.on{
+.area-sel .sel-list li.on {
   color: #f2a965;
   border: 1px solid #f2a965;
 }
-.date-sel{
+.date-sel {
   width: 100%;
   height: 30px;
   border-bottom: 1px solid #ddd;
   margin-top: 35px;
+  background-color: #fff;
 }
-.date-sel.fixed{
+.date-sel.fixed {
   position: fixed;
 }
-.cinema-list.mt35{
+.cinema-list.mt35 {
   margin-top: 35px;
 }
-.cinema-list.mt65{
+.cinema-list.mt65 {
   margin-top: 65px;
 }
-.cinema-list ul{
+.cinema-list ul {
   padding: 0 10px;
 }
-.cinema-list ul li{
+.cinema-list ul li {
   border-bottom: 1px solid #ddd;
   padding: 5px 0;
 }
-.cinema-list ul li:last-child{
+.cinema-list ul li:last-child {
   border-bottom: none;
 }
-.cinema-list .name{
+.cinema-list .name {
   line-height: 30px;
 }
-.cinema-list .name span{
+.cinema-list .name span {
   font-size: 16px;
   font-weight: bold;
 }
-.cinema-list .name em{
+.cinema-list .name em {
   color: #f2a965;
   font-size: 14px;
   float: right;
 }
-.cinema-list .name em i{
+.cinema-list .name em i {
   float: left;
   width: 16px;
   height: 16px;
   background-position: left -24px;
   margin: 8px 5px 0 0;
 }
-.cinema-list .desc{
+.cinema-list .desc {
   font-size: 14px;
   color: #666;
   line-height: 22px;
@@ -387,7 +387,7 @@
   display: block;
 }
 /*编辑手机号码*/
-.phone-num{
+.phone-num {
   width: 100%;
   height: 40px;
   line-height: 40px;
@@ -396,7 +396,7 @@
   font-size: 14px;
   color: #333;
 }
-.phone-num input{
+.phone-num input {
   border: none;
   width: 75%;
   height: 40px;
@@ -405,50 +405,50 @@
   margin-left: 10px;
 }
 /*确认订单*/
-.order{
+.order {
   background-color: #f5f5f5;
   margin: 15px 10px;
   border-radius: 5px;
   position: relative;
 }
-.order .tit{
+.order .tit {
   overflow: hidden;
   border-bottom: 1px solid #999;
   padding: 0 5px;
 }
-.order .tit .fl{
+.order .tit .fl {
   float: left;
   line-height: 30px;
   margin-top: 10px;
 }
-.order .tit .fl .name{
+.order .tit .fl .name {
   font-size: 18px;
   font-weight: bold;
 }
-.order .tit .fl .num{
+.order .tit .fl .num {
   font-size: 14px;
 }
-.order .tit .fr{
+.order .tit .fr {
   float: right;
   margin-top: 5px;
 }
-.order .tit .fr span{
+.order .tit .fr span {
   display: block;
   text-align: right;
 }
-.order .tit .fr span.f16{
+.order .tit .fr span.f16 {
   font-size: 18px;
   color: #666;
   font-weight: bold;
   line-height: 20px;
 }
-.order .con{
+.order .con {
   padding: 10px;
   color: #666;
   font-size: 14px;
   line-height: 25px;
 }
-.order .ticket-style{
+.order .ticket-style {
   width: 30px;
   height: 30px;
   border-radius: 100px;
@@ -458,16 +458,16 @@
   top: 50%;
   margin-top: -15px;
 }
-.order-tips{
+.order-tips {
   margin: 25px 15px;
   font-size: 14px;
   color: #999;
 }
-.order-tips .tips-tit{
+.order-tips .tips-tit {
   color: #333;
   line-height: 25px;
 }
-.confirm-btm{
+.confirm-btm {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -476,26 +476,26 @@
   background-color: #fff;
   overflow: hidden;
 }
-.confirm-btm .fl{
+.confirm-btm .fl {
   float: left;
   line-height: 55px;
   width: 50%;
   text-align: center;
 }
-.confirm-btm .fl span{
+.confirm-btm .fl span {
   font-size: 14px;
 }
-.confirm-btm .fl em{
+.confirm-btm .fl em {
   font-size: 20px;
   color: #DF1F48;
   font-weight: bold;
 }
-.confirm-btm .fr{
+.confirm-btm .fr {
   float: right;
   line-height: 55px;
   width: 50%;
 }
-.confirm-btm .fr a{
+.confirm-btm .fr a {
   display: block;
   color: #fff;
   background-color: #ec5b68;
@@ -539,11 +539,11 @@
   border-radius: 0;
 }
 /*订单列表*/
-.ticket-tab.three li{
+.ticket-tab.three li {
   width: 33.33%;
   padding: 0 30px;
 }
-.order-list.mt30{
+.order-list.mt30 {
   margin-top: 30px;
 }
 .order_nub {
@@ -580,29 +580,29 @@
   font-weight: 700;
   color: #f60;
 }
-.order-detail{
+.order-detail {
   background-color: #f5f5f5;
   padding: 10px;
 }
-.order-detail .detail-desc p{
+.order-detail .detail-desc p {
   color: #666;
   font-size: 14px;
 }
-.order-detail .detail-desc p.name{
+.order-detail .detail-desc p.name {
   color: #333;
   font-size: 18px;
   font-weight: bold;
 }
-.order-detail .detail-price{
+.order-detail .detail-price {
   text-align: right;
   margin-top: 10px;
   font-size: 14px;
 }
-.order-detail .detail-price em{
+.order-detail .detail-price em {
   font-size: 18px;
   color: #DF1F48;
 }
-.order-price{
+.order-price {
   overflow: hidden;
   padding: 10px;
   background-color: #f5f5f5;
@@ -628,148 +628,150 @@
   color: #fff;
 }
 /*订单详情*/
-.order-box{
+.order-box {
   border-top: 1px solid #ddd;
   background-color: #f5f5f5;
   padding-bottom: 10px;
 }
-.order-desc{
+.order-desc {
   background-color: #fff;
   padding: 10px;
   font-size: 14px;
 }
-.order-desc p{
+.order-desc p {
   overflow: hidden;
 }
-.order-desc p label{
+.order-desc p label {
   float: left;
   width: 25%;
 }
-.order-desc p span{
+.order-desc p span {
   float: left;
   width: 75%;
 }
-.order-desc p span.red{
+.order-desc p span.red {
   color: #DF1F48;
 }
-.ticket-code{
+.ticket-code {
   background-color: #fff;
   height: 40px;
   line-height: 40px;
   padding: 0 10px;
   font-size: 14px;
 }
-.ticket-tips{
+.ticket-tips {
   background-color: #fff;
   padding: 10px;
   font-size: 14px;
   color: #666;
 }
-.ticket-tips .tips-tit{
+.ticket-tips .tips-tit {
   color: #333;
   font-size: 15px;
 }
-.order-price.detail-price{
+.order-price.detail-price {
   background-color: #fff;
   border-bottom: none;
 }
 /*排片情况*/
-.paipian-cinema{
+.paipian-cinema {
   overflow: hidden;
   width: 100%;
   padding: 10px;
   font-size: 14px;
   position: relative;
 }
-.paipian-cinema .fl{
+.paipian-cinema .fl {
   float: left;
   width: 80%;
   color: #666;
 }
-.paipian-cinema .fl .name{
+.paipian-cinema .fl .name {
   color: #333;
 }
-.paipian-cinema .fr{
+.paipian-cinema .fr {
   width: 20%;
   position: absolute;
   right: 0;
   top: 50%;
   margin-top: -20px;
 }
-.paipian-cinema .fr i{
+.paipian-cinema .fr i {
   display: block;
   width: 41px;
   height: 41px;
   margin: 0 auto;
   background-position: right -21px;
 }
-.paipian-img{
+.paipian-img {
   width: 100%;
   height: 125px;
   background-color: #c6c6c6;
 }
-.film-detail{
+.film-detail {
   border-bottom: 1px solid #ddd;
   text-align: center;
   padding: 10px 0;
 }
-.film-detail .name{
+.film-detail .name {
   position: relative;
 }
-.film-detail .name span{
+.film-detail .name span {
   font-size: 18px;
 }
-.film-detail .name span.score{
+.film-detail .name span.score {
   color: #F2A95D;
   font-weight: bold;
   margin-left: 10px;
   position: absolute;
 }
-.film-detail .name em{
+.film-detail .name em {
   font-size: 14px;
 }
-.film-detail .desc{
+.film-detail .desc {
   color: #999;
 }
-.date-sel.mt0{
+.date-sel.mt0 {
   margin-top: 0;
 }
-.time-list .tips{
+.time-list .tips {
   color: #999;
   font-size: 14px;
   line-height: 30px;
   margin-left: 10px;
+  padding: 0;
+  border: none;
 }
-.time-list .tips i{
+.time-list .tips i {
   width: 16px;
   height: 15px;
   background-position: right top;
   margin: 3px 5px -2px 0;
 }
-.time-list ul li{
+.time-list ul li {
   border-bottom: 1px solid #ddd;
   overflow: hidden;
   padding: 10px;
   position: relative;
 }
-.time-list ul li:last-child{
+.time-list ul li:last-child {
   border-bottom: none;
 }
-.time-list .time{
+.time-list .time {
   float: left;
   margin-left: 20px;
 }
-.time-list .time span{
+.time-list .time span {
   display: block;
 }
-.time-list .time .start{
+.time-list .time .start {
   font-size: 22px;
   font-weight: bold;
 }
-.time-list .time .end{
+.time-list .time .end {
   color: #666;
 }
-.time-list .posi{
+.time-list .posi {
   position: absolute;
   left: 50%;
   margin-left: -20px;
@@ -778,26 +780,26 @@
   line-height: 25px;
   text-align: center;
 }
-.time-list .posi span{
+.time-list .posi span {
   display: block;
   font-size: 14px;
   color: #666;
 }
-.time-list .posi span.green{
+.time-list .posi span.green {
   color: #693;
 }
-.time-list .list-link.mr10{
+.time-list .list-link.mr10 {
   margin-right: 10px;
 }
 .time-list .stop-sales .time,
 .time-list .stop-sales .time .end,
 .time-list .stop-sales .posi span,
 .time-list .stop-sales .posi span.green,
-.time-list .stop-sales .list-link{
+.time-list .stop-sales .list-link {
   color: #999;
   border-color: #999;
 }
-.no-time p{
+.no-time p {
   font-size: 15px;
   color: #666;
   margin-top: 25px;
@@ -903,10 +905,185 @@
   background: #EC5B68;
 }
 /*日期滑动选择*/
-.date-sel .ticket-tab{
+.date-sel .ticket-tab {
   top: 0;
   overflow: visible;
 }
-.date-sel .ticket-tab li{
+.date-sel .ticket-tab li {
   padding: 0 15px;
+}
+/*选座*/
+
+.body-wrapper {
+  min-height: 100%;
+  padding-bottom: 1.76rem;
+  position: relative;
+}
+.movie{
+  background-color: #fff;
+}
+.movie .info {
+  margin: 0 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+}
+.movie .info h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.movie .info p {
+  font-size: 13px;
+  color: #DE4C35;
+}
+.tips {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.tips .seat-intro {
+  text-align: center;
+}
+.tips .seat-intro li {
+  float: left;
+  width: 33%;
+  font-size: 13px;
+  color: #666;
+}
+.seat {
+  margin: 0 3px;
+  vertical-align: -3px;
+  width: 24px;
+  height: 20px;
+}
+.tips .seat-intro .active {
+  background-position: 0 -280px;
+}
+.tips .seat-intro .selected {
+  background-position: 0 -226px;
+}
+.tips .seat-intro .disabled {
+  background-position: 0 -253px;
+}
+.main-small {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.main-small h3 {
+  width: 50%;
+  text-align: center;
+  font-size: 14px;
+  background: #e2e2e2;
+  color: #333;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+.main-small .side {
+  color: #fff;
+  font-size: 12px;
+  left: 5px;
+  opacity: 0.6;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  margin-top:-90px;
+}
+.main-small .side ul {
+  background: #7f7f7f none repeat scroll 0 0;
+  border-radius: 8px;
+  width: 20px;
+  padding: 10px 0;
+}
+.main-small .side li {
+  height: 20px;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+}
+.wrapper { padding:10px 0;}
+.wrapper p {
+  font-size: 0;
+  text-align: center;
+  overflow:hidden;
+  white-space: nowrap;
+  height:28px;
+}
+
+.wrapper .seat {
+  margin: 0 5px;
+  vertical-align:0;
+  width: 24px;
+  height: 20px;
+  display:inline-block;
+}
+.wrapper .active {
+  background-position: 0 -280px;
+}
+.wrapper .selected {
+  background-position: 0 -226px;
+}
+.wrapper .disabled {
+  background-position: 0 -253px;
+}
+.wrapper .love .seat {
+  margin: 0 5px;
+  vertical-align:0;
+  width: 40px;
+  height: 20px;
+  display:inline-block;
+}
+.wrapper .love .active{background-position: -28px -280px;}
+.wrapper .love .selected{background-position: -28px -226px;}
+.wrapper .love .disabled{background-position: -28px -253px;}
+.seat-detail{
+  height: 55px;
+  padding: 0 10px;
+}
+.seat-sel{
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.seat-sel span{
+  margin-right: 10px;
+}
+.seat-res{
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.seat-res .seat-phone{
+  float: left;
+  font-size: 14px;
+}
+.seat-res .seat-phone label{
+  color: #666;
+}
+.seat-res .seat-phone span{
+  color: #DF1F48;
+}
+.seat-res .seat-phone a{
+  width: 12px;
+  height: 10px;
+  background-position: -36px top;
+}
+.seat-res .seat-sum{
+  float: right;
+  font-size: 14px;
+}
+.seat-res .seat-sum em{
+  font-size: 24px;
+  color: #DF1F48;
+}
+.btmfixed.xuanzuo{
+  height: 110px;
+  background-color: #fff;
+}
+.a-xz.red{
+  background-color: #df1f48;
+  position: absolute;
+  bottom: 0;
 }
