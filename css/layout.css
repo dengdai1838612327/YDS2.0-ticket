@@ -1187,3 +1187,22 @@
 .w-modal .btns a.cur {
   background: #E60012;
 }
+/*页面内容为空*/
+.empty-img {
+  position: absolute;
+  margin-top: -90px;
+  left: 50%;
+  margin-left: -57px;
+  width: 116px;
+  height: 180px;
+  top: 50%;
+}
+.empty-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.empty-text span {
+  display: block;
+}
