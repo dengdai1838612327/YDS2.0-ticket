@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>选座</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+<style>
+#bg-gray {
+	background-color: #333;
+	display: none;
+	left: 0;
+	opacity: .7;
+	filter: alpha(opacity=70);
+	-moz-opacity: .7;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	right: 0;
+	bottom: 0;
+}
+.sel-modal {
+	background-color: #fff;
+	border-radius: 3px;
+	box-sizing: border-box;
+	display: none;
+	height: 130px;
+	left: 50%;
+	margin-left: -35%;
+	margin-top: -66px;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	width: 70%;
+	z-index: 201;
+}
+.sel-top {
+	padding: 10px 0;
+}
+.sel-modal .h4 {
+	font-size: 16px;
+	text-align: center;
+}
+.name_list {
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	height: 49px;
+	padding: 0 15px;
+	width: 100%;
+}
+.name_list .tel-input {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	display: block;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.sel-btn {
+	overflow: hidden;
+	width: 100%;
+}
+.sel-btn .btn {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+	box-sizing: border-box;
+	color: #3995fd;
+	float: left;
+	font-size: 15px;
+	height: 37px;
+	text-align: center;
+	width: 50%;
+}
+.sel-btn .qx_btn {
+	color: #333;
+	border-right: 1px solid #ccc;
+	-webkit-appearance: none;
+	outline: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.gd {
+	width: 35px;
+	display: inline-block;
+	height: 20px;
+}
+</style>
+</head>
+<body>
+<div class="topfixed">
+  <header class="header white bd_b"> <a href="###" class="a-back"></a>
+    <h2>羞羞的铁拳</h2>
+  </header>
+</div>
+<div class="content" style="padding: 45px 0 110px;">
+  <div class="body-wrapper">
+    <div class="movie">
+      <div class="info">
+        <h3>上海翰金影城</h3>
+        <p>周五11月24日 12：00&nbsp;中文3D</p>
+      </div>
+    </div>
+    <div class="tips">
+      <ul class="seat-intro clearfix">
+        <li><span class="seat sprites active"></span>可选</li>
+        <li><span class="seat sprites selected"></span>已选</li>
+        <li><span class="seat sprites disabled"></span>已售</li>
+      </ul>
+      <p class="p-1">该服务由淘票票提供</p>
+    </div>
+    <div class="main-small" id="main" style="height: 310px; text-align:left;">
+      <div class="side">
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <div class="scroller" id="scroller">
+          <h3>0号厅&nbsp;银幕</h3>
+          <div class="bod">
+            <p></p>
+            <p></p>
+            <p>
+            <em class="gd"></em>
+            <span flag="" seatid="0000000000000001-1-06" seatname="1排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-07" seatname="1排07座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-08" seatname="1排08座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-09" seatname="1排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-10" seatname="1排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-11" seatname="1排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-12" seatname="1排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-13" seatname="1排13座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-14" seatname="1排14座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span>
+            <span flag="" seatid="0000000000000001-1-15" seatname="1排15座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            
+            <p><span flag="" seatid="0000000000000001-2-01" seatname="2排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-02" seatname="2排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-03" seatname="2排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-04" seatname="2排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-05" seatname="2排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-2-06" seatname="2排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-07" seatname="2排07座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-08" seatname="2排08座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-09" seatname="2排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-10" seatname="2排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-11" seatname="2排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-12" seatname="2排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-13" seatname="2排13座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-14" seatname="2排14座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-2-15" seatname="2排15座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            <p><span flag="" seatid="0000000000000001-3-01" seatname="3排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-02" seatname="3排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-03" seatname="3排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-04" seatname="3排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-05" seatname="3排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-3-06" seatname="3排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-07" seatname="3排07座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-08" seatname="3排08座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-09" seatname="3排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-10" seatname="3排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-11" seatname="3排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-12" seatname="3排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-13" seatname="3排13座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-3-14" seatname="3排14座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            <p><span flag="" seatid="0000000000000001-4-01" seatname="4排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-02" seatname="4排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-03" seatname="4排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-04" seatname="4排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-05" seatname="4排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-4-06" seatname="4排06座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-07" seatname="4排07座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-08" seatname="4排08座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-09" seatname="4排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-10" seatname="4排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-11" seatname="4排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-12" seatname="4排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-13" seatname="4排13座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-4-14" seatname="4排14座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            <p><span flag="" seatid="0000000000000001-5-01" seatname="5排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-02" seatname="5排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-03" seatname="5排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-04" seatname="5排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-05" seatname="5排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-5-06" seatname="5排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-07" seatname="5排07座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-08" seatname="5排08座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-09" seatname="5排09座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-10" seatname="5排10座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-11" seatname="5排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-12" seatname="5排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-5-13" seatname="5排13座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            <p><span flag="" seatid="0000000000000001-6-01" seatname="6排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-02" seatname="6排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-03" seatname="6排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-04" seatname="6排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-05" seatname="6排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-6-06" seatname="6排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-07" seatname="6排07座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-08" seatname="6排08座" name="Seat" onclick=";" class="seat disabled" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-09" seatname="6排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-10" seatname="6排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-11" seatname="6排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-6-12" seatname="6排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+            <p><span flag="" seatid="0000000000000001-7-01" seatname="7排01座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-02" seatname="7排02座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-03" seatname="7排03座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-04" seatname="7排04座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-05" seatname="7排05座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><em class="gd"></em><span flag="" seatid="0000000000000001-7-06" seatname="7排06座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-07" seatname="7排07座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-08" seatname="7排08座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-09" seatname="7排09座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-10" seatname="7排10座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-11" seatname="7排11座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span><span flag="" seatid="0000000000000001-7-12" seatname="7排12座" name="Seat" onclick="Seat.SelectSpan(this,true);" class="seat active" style="width: 30px;"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btmfixed xuanzuo">
+  <div class="seat-detail">
+    <p class="seat-sel"><span>6排00座</span> <span>6排00座</span> <span>6排00座</span> <span>6排00座</span> </p>
+    <div class="seat-res">
+      <p class="seat-phone">
+        <label>收码手机</label>
+        <span>15000797100</span> <a href="###" onclick="return goods_sel();" class="sprites"></a> </p>
+    </div>
+  </div>
+  <div class="clearfix seat-btns">
+    <p class="seat-sum"><span>票价</span> <em>152.8元</em> </p>
+    <a href="###" class="a-xz red">确认选座</a> </div>
+</div>
+<div id="bg-gray"></div>
+<div class="sel-modal" style="display: none;">
+  <div class="sel-top">
+    <p class="h4">输入手机号</p>
+  </div>
+  <div class="name_list">
+    <input name="" type="text" class="tel-input">
+  </div>
+  <div class="sel-btn">
+    <input value="取消" class="btn qx_btn" type="button">
+    <input value="确定" class="btn" type="button">
+  </div>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script>
+        function goods_sel() {
+            var bggray = $("#bg-gray");
+            var modal = $(".sel-modal");
+            bggray.css("height", window.screen.height);
+            bggray.css("width", window.screen.width);
+            bggray.show();
+            modal.show();
+        }
+        var p = $("#scroller p");
+        var m = 0;
+        if (p.length > 0) {
+            var i;
+            var length;
+
+            for (i = 0; i < p.length; i++) {
+                length = p.eq(i).find("span").length;
+                if (length > m) {
+                    m = length;
+                }
+            }
+        }
+        $("#scroller").width(m * 40);
+        var weit = m * 20 - window.screen.width / 2;
+        if (weit > 0) {
+            $(".wrapper").scrollLeft(weit)
+        }
+       
+    </script>
+</body>
+</html>

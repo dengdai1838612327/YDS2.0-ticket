@@ -24,7 +24,7 @@
 .swiper-wrapper {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 200px;
 	z-index: 1;
 	display: -webkit-box;
 	display: -moz-box;
@@ -51,12 +51,11 @@
 	-webkit-flex-shrink: 0;
 	-ms-flex: 0 0 auto;
 	flex-shrink: 0;
-	width: 100%;
-	height: 100%;
+	height: 200px;
 	position: relative;
 }
 .swiper-slide img {
-	width: 100%;
+	width: auto;
 	height: 100%;
 	line-height: 1;
 	display: block;
@@ -92,9 +91,9 @@
         <dd>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/index_img2.png"></div>
-              <div class="swiper-slide"><img src="images/index_img2.png"></div>
-              <div class="swiper-slide"><img src="images/index_img2.png"></div>
+              <div class="swiper-slide"><img src="images/TB10DP8g2BNTKJjy1zdXXaScpXa_.jpg"></div>
+              <div class="swiper-slide"><img src="images/TB1bzEKlMMPMeJjy1XcXXXpppXa_.jpg"></div>
+              <div class="swiper-slide"><img src="images/TB19GvPlMMPMeJjy1XdXXasrXXa_.jpg"></div>
               <div class="swiper-slide"><img src="images/index_img2.png"></div>
               <div class="swiper-slide"><img src="images/index_img2.png"></div>
               <div class="swiper-slide"><img src="images/index_img2.png"></div>
@@ -112,10 +111,13 @@
 <div class="btmfixed"> <a href="###" class="a-xz">优惠选座</a> </div>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        paginationClickable: true,
-        spaceBetween: 10
+      slidesPerView: 'auto',
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
     });
-    </script>
+  </script>
 </body>
 </html>
