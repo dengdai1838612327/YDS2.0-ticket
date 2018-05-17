@@ -1509,3 +1509,44 @@
 	top: 10px;
 	background-position: 0 -150px;
 }
+/*添加优惠券*/
+.yhq-add .add-box{
+	width: 90%;
+	margin: 30px auto;
+	border-bottom: 1px solid #ddd;
+}
+.yhq-add .add-box i{
+	width: 19px;
+	height: 24px;
+	background-position: 0 -120px;
+	margin: 5px 10px;
+	vertical-align: middle;
+}
+.yhq-add .add-box input{
+	font-size: 14px;
+	width: 200px;
+	height: 35px;
+	vertical-align: middle;
+}
+.yhq-add .a_phone_btn{
+	width: 70%;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+.yhq-modal{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 120px;
+	margin-top: -60px;
+	margin-left: -75px;
+	background-color: #7d7d7d;
+	border-radius: 5px;
+	z-index: 201;
+}
+.yhq-modal img{
+	display: block;
+	margin: 6px auto;
+}

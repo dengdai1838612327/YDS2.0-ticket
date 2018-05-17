@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加优惠券</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=0">
+</head>
+<body class="bfff">
+<div class="topfixed">
+  <!-- 若头部没有下边框，则需要去掉下面header标签的bd_b -->
+  <header class="header white bd_b">
+    <a href="###" class="a-back"></a>
+    <h2>添加优惠券</h2>
+  </header>
+</div>
+<div class="content" style="padding:45px 0 0;">
+  <div class="yhq-add">
+    <div class="add-box">
+      <i class="sprites"></i>
+      <input type="text" placeholder="请输入优惠券券码">
+    </div>
+    <div class="a_phone_btn">
+      <a href="###" onclick="return yhq_modal();">确定</a>
+    </div>
+  </div>
+</div>
+<div class="yhq-modal">
+  <img src="images/add-suc.png" width="79" height="108">
+  <!-- <img src="images/add-fail.png" width="79" height="108"> -->
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function yhq_modal(){
+  var modal = $(".yhq-modal");
+  modal.show();
+};
+</script>
+</body>
+</html>

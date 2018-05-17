@@ -333,34 +333,34 @@ address, h1, h2, h3, h4, h5, h6, i, li, span {
 	position: relative;
 	text-align: center;
 	vertical-align: middle;
-	width: 33.33%;
+	width: 33%;
 }
 .footer a.cur {
 	color: #e51a29
 }
 .footer .tab-item i {
 	display: block;
+	height: 30px;
+	margin: 5px auto 0;
 	width: 31px;
-	height: 31px;
-	margin: 7px auto 0;
 }
 .footer .tab1 i {
 	background-position: -169px -202px;
 }
 .footer .tab1.cur i {
-	background-position: -134px -202px;
+	background-position: -133px -202px;
 }
 .footer .tab2 i {
-	background-position: -169px -237px;
+	background-position: -171px -237px;
 }
 .footer .tab2.cur i {
-	background-position: -134px -237px;
+	background-position: -135px -237px;
 }
 .footer .tab3 i {
-	background-position: -169px -271px;
+	background-position: -171px -271px;
 }
 .footer .tab3.cur i {
-	background-position: -134px -271px;
+	background-position: -135px -271px;
 }
 .footer .tab-item span {
 	line-height: 18px;
