@@ -492,9 +492,9 @@
 }
 .order-tips .tips-tit {
 	font-size: 16px;
-  color: #656565;
-  font-weight: bold;
-  line-height: 30px;
+	color: #656565;
+	font-weight: bold;
+	line-height: 30px;
 }
 .confirm-btm {
 	position: fixed;
@@ -671,7 +671,7 @@
 	line-height: 35px;
 	color: #666;
 }
-.order-desc p:last-child{
+.order-desc p:last-child {
 	border-bottom: none;
 }
 .order-desc p label {
@@ -1352,7 +1352,7 @@
 	color: #fff;
 }
 /*确认订单*/
-.order2-box{
+.order2-box {
 	padding: 10px;
 	border-bottom: 1px solid #dbdbdb;
 	overflow: hidden;
@@ -1389,26 +1389,26 @@
 	font-size: 14px;
 	line-height: 22px;
 }*/
-.order2-box .box-tit{
+.order2-box .box-tit {
 	font-size: 16px;
 	color: #656565;
 	font-weight: bold;
 	float: left;
 	line-height: 25px;
 }
-.order2-box .icon-right{
+.order2-box .icon-right {
 	height: 45px;
 	left: auto;
 	right: 10px;
 }
-.order2-box .yhq-text{
+.order2-box .yhq-text {
 	float: right;
 	color: #f00;
 	font-size: 14px;
 	line-height: 25px;
 	margin-right: 20px;
 }
-.order2-box .yhq-tag{
+.order2-box .yhq-tag {
 	float: right;
 	color: #f00;
 	font-size: 14px;
@@ -1438,49 +1438,49 @@
 .confirm .a-xz.red{
 	background-color: #f00;
 }*/
-.confirm.seat-sum{
+.confirm.seat-sum {
 	text-align: center;
 }
-.confirm.seat-sum em{
+.confirm.seat-sum em {
 	color: #f00;
 }
-.confirm.seat-sum em i{
+.confirm.seat-sum em i {
 	font-size: 14px;
 }
-.confirm.seat-sum span{
+.confirm.seat-sum span {
 	display: block;
 	line-height: 25px;
 	color: #666;
 	font-size: 13px;
 }
-.confirm.seat-sum span em{
+.confirm.seat-sum span em {
 	font-size: 18px;
 	margin: 0 5px;
 }
 /*订单详情*/
-.order-detail.order-new{
+.order-detail.order-new {
 	background-color: #fff;
 	border-bottom: 1px solid #ddd;
 	overflow: hidden;
 }
-.order-new .detail-desc{
+.order-new .detail-desc {
 	float: left;
 	width: 75%;
 }
-.order-new .detail-desc .name em{
+.order-new .detail-desc .name em {
 	font-size: 13px;
 	margin-left: 10px;
 }
-.order-new .detail-img{
+.order-new .detail-img {
 	float: right;
 	width: 25%;
 }
-.ticket-code .sum{
+.ticket-code .sum {
 	font-size: 16px;
 	font-weight: bold;
 	color: #333;
 }
-.ticket-code button{
+.ticket-code button {
 	padding: 3px 5px;
 	margin: 5px 0;
 	border: none;
@@ -1488,7 +1488,7 @@
 	background-color: #f00;
 	color: #fff;
 }
-.ewm-modal{
+.ewm-modal {
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -1501,7 +1501,7 @@
 	padding: 30px;
 	z-index: 201;
 }
-.ewm-modal .close{
+.ewm-modal .close {
 	width: 14px;
 	height: 14px;
 	position: absolute;
@@ -1510,30 +1510,30 @@
 	background-position: 0 -150px;
 }
 /*添加优惠券*/
-.yhq-add .add-box{
+.yhq-add .add-box {
 	width: 90%;
 	margin: 30px auto;
 	border-bottom: 1px solid #ddd;
 }
-.yhq-add .add-box i{
+.yhq-add .add-box i {
 	width: 19px;
 	height: 24px;
 	background-position: 0 -120px;
 	margin: 5px 10px;
 	vertical-align: middle;
 }
-.yhq-add .add-box input{
+.yhq-add .add-box input {
 	font-size: 14px;
 	width: 200px;
 	height: 35px;
 	vertical-align: middle;
 }
-.yhq-add .a_phone_btn{
+.yhq-add .a_phone_btn {
 	width: 70%;
 	margin: 0 auto;
 	border-radius: 3px;
 }
-.yhq-modal{
+.yhq-modal {
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -1546,7 +1546,82 @@
 	border-radius: 5px;
 	z-index: 201;
 }
-.yhq-modal img{
+.yhq-modal img {
 	display: block;
 	margin: 6px auto;
+}
+/*领取优惠券*/
+.coupon-content {
+	margin-top: 55px;
+	padding: 0 10px;
+}
+.coupon-ul li {
+	margin-bottom: 10px;
+	min-height: 90px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.coupon-ul li .true-img {
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.coupon-ul li .true-img img {
+	width: 100%;
+	height: auto;
+	line-height: 1;
+	display: block;
+}
+.coupon-ul li .fl {
+	float: left;
+	padding-left: 30px;
+	width: 71%;
+}
+.coupon-ul h3 {
+	color: #fff;
+	font-weight: bold;
+	margin-top: 5%;
+	font-size: 14px;
+}
+.fl > p {
+	color: #fff;
+	font-size: 11px;
+	height: 26px;
+	line-height: 1.2;
+	margin-bottom: 2%;
+	overflow: hidden;
+}
+.fl > span {
+	color: #fff;
+	display: block;
+	font-size: 10px;
+}
+.coupon-ul li .fr {
+	float: right;
+	text-align: center;
+	width: 29%;
+}
+.coupon-ul li .fr p {
+	font-size: 45px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	margin-top: 5px;
+	line-height: 1;
+}
+.coupon-ul li .fr p span {
+	font-size: 15px;
+}
+.coupon-ul li .fr input {
+	color: #FF2B00;
+	border: none;
+    background: url(../images/btn.png) 0 0 no-repeat; background-size:50px 20px;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	font-weight:bold;
+}
+.coupon-ul li.false .fr input {
+	color:#95A9AB;
+
 }
